@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULADORA DE IMPUESTOS 4TA CATEGORIA</h1>
+    <h2>Bienvenido, calcularemos tus impuestos</h2>
+    <script>
+        const UIT = 5350
+        let ingresos = prompt("Ingresa tus ingresos anuales")
+        const deduccion = 0.2
+        const deduccionAdi = 7 * UIT
+        let rentaPonible = ingresos - (ingresos * deduccion) - deduccionAdi
+        let tasa = 0.8
+        let impuestoTotal = rentaPonible - (rentaPonible * tasa)
+        document.write(`Tus ingresos anuales son: S/ ${ingresos} <br>`)
+        document.write(`Tu renta ponible es: S/ ${rentaPonible} <br>`)
+        document.write(`Tu impuesto total a pagar es: S/ ${impuestoTotal} <br>`)
+    </script>
+</body>
+</html>
