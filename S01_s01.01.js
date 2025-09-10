@@ -19,5 +19,5 @@ document.write('VARIABLES DEFINIDAS CON LET' + "<br>" + segResultado + "<br>")
 const var7 = 13
 const var8 = 14
 const var9 = 15
-let terResultado = `Ahora somo constantes, no podemos ser cambiadas, yo soy variable7 = ${var7}, yo soy variable8 = ${var8}, yo soy variable = ${var9}`
+let terResultado = `Ahora somo constantes, no podemos ser cambiadas, yo soy variable7 = ${var7}, yo soy variable8 = ${var8}, yo soy variable la variable9 = ${var9}`
 document.write('VARIABLES DEFINIDAS COMO CONSTANTES' + "<br>" + terResultado + "<br>")

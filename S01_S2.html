@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        AHORA CREAREMOS UN BOTON QUE AL DARLE CLICK EJECUTARA UNA FUNCION
+    </h1>
+    <h2> Este es el boton:</h2>
+    <button id="btn">Presioname</button>
+    <h2 id="resultado">Este es el resultado:</h2>
+    <script>
+        const boton = document.getElementById("btn")
+        const resultado = document.getElementById("resultado")
+        boton.addEventListener("click", function(){
+            resultado.innerHTML = ""
+            for (let i = 0; i < 10; i++){
+                resultado.innerHTML += `El conteo es: ${i} <br>`
+            }
+        })
+    </script>
+    <div>
+    <h2>Ahora haremos otro evento interesante</h2>
+    <p>Manten presionado el boton y ve la magia</p>
+    <button id="btn2">Presioname</button>
+    <h2 id="presion"></h2>
+    <script>
+        const boton2 = document.getElementById("btn2")
+        const presion = document.getElementById("presion")
+        boton2.addEventListener("mousedown", function(){
+            presion.innerHTML = "Me estas presionando"
+        boton2.addEventListener("mouseup", function(){
+            presion.innerHTML = " "
+                    })
+        })
+    </script>
+    </div>
+</body>
+</html>
